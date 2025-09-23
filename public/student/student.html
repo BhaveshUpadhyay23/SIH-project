@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Shikshan Sahayak System</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">Shikshan Sahayak</div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-section="dashboard">
+                        <span class="nav-icon">🏠</span>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="documents">
+                        <span class="nav-icon">📄</span>
+                        Documents
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="notices">
+                        <span class="nav-icon">📢</span>
+                        Notices
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="results">
+                        <span class="nav-icon">📊</span>
+                        Results
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="leaderboard">
+                        <span class="nav-icon">🏆</span>
+                        Leaderboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="doubts">
+                        <span class="nav-icon">❓</span>
+                        Doubts
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="assignments">
+                        <span class="nav-icon">✍️</span>
+                        Assignments
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="calendar">
+                        <span class="nav-icon">📅</span>
+                        Calendar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="progress">
+                        <span class="nav-icon">📈</span>
+                        Progress
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="welcome-text">
+                    <h1>Welcome back, Bhavesh Upadhyay!</h1>
+                    <p>Ready to continue your learning journey?</p>
+                </div>
+                <div class="user-profile">
+                    <div class="user-avatar">A</div>
+                    <div>
+                        <div style="font-weight: 600;">Bhavesh Upadhyay</div>
+                        <div style="font-size: 0.8rem; color: #b0b0b0;">B.Tech AIML</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dashboard Overview -->
+            <div id="dashboard-section" class="content-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">Documents Available</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">New Notices</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Average Score</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">7</div>
+                        <div class="stat-label">Rank in Class</div>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <div class="main-section">
+                        <!-- Recent Documents -->
+                        <div class="content-section">
+                            <div class="section-header">
+                                <h2 class="section-title">Recent Documents</h2>
+                                <a href="#" class="view-all">View All</a>
+                            </div>
+                            <div class="document-list">
+                                <div class="document-item">
+                                    <div class="doc-icon pdf-icon">📄</div>
+                                    <div class="doc-details">
+                                        <div class="doc-title">Physics Chapter 12 - Electromagnetism</div>
+                                        <div class="doc-meta">Uploaded by Mr. Smith • 2 days ago • 2.4 MB</div>
+                                    </div>
+                                    <button class="doc-download">Download</button>
+                                </div>
+                                <div class="document-item">
+                                    <div class="doc-icon pdf-icon">📄</div>
+                                    <div class="doc-details">
+                                        <div class="doc-title">Mathematics Assignment - Calculus</div>
+                                        <div class="doc-meta">Uploaded by Mrs. • 5 days ago • 1.8 MB</div>
+                                    </div>
+                                    <button class="doc-download">Download</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recent Results -->
+                        <div class="content-section">
+                            <div class="section-header">
+                                <h2 class="section-title">Recent Results</h2>
+                                <a href="#" class="view-all">View All</a>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-info">
+                                    <h4>Physics Midterm Exam</h4>
+                                    <p>Completed on March 15, 2024</p>
+                                </div>
+                                <div class="result-score">
+                                    <div class="score">88%</div>
+                                    <div class="grade">Grade A</div>
+                                </div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-info">
+                                    <h4>Chemistry Lab Report</h4>
+                                    <p>Submitted on March 12, 2024</p>
+                                </div>
+                                <div class="result-score">
+                                    <div class="score">92%</div>
+                                    <div class="grade">Grade A+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Content -->
+                    <div>
+                        <!-- Quick Notices -->
+                        <div class="sidebar-section">
+                            <h3 style="margin-bottom: 1rem; color: #ffffff;">Latest Notices</h3>
+                            <div class="notice-item">
+                                <div class="notice-priority high-priority"></div>
+                                <div class="notice-content">
+                                    <h4>Exam Schedule Released</h4>
+                                    <p>Final exams will begin from April 1st</p>
+                                    <div class="notice-time">2 hours ago</div>
+                                </div>
+                            </div>
+                            <div class="notice-item">
+                                <div class="notice-priority medium-priority"></div>
+                                <div class="notice-content">
+                                    <h4>Library Hours Extended</h4>
+                                    <p>Library will remain open until 8 PM</p>
+                                    <div class="notice-time">1 day ago</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Leaderboard Preview -->
+                        <div class="sidebar-section">
+                            <h3 style="margin-bottom: 1rem; color: #ffffff;">Top Performers</h3>
+                            <div class="leaderboard-list">
+                                <div class="leaderboard-item">
+                                    <div class="rank top3">1</div>
+                                    <div class="student-avatar">S</div>
+                                    <div class="student-info">
+                                        <div class="student-name">Bhavesh Upadhyay</div>
+                                        <div class="student-points"><span class="points">2,450</span> points</div>
+                                    </div>
+                                </div>
+                                <div class="leaderboard-item">
+                                    <div class="rank top3">2</div>
+                                    <div class="student-avatar">M</div>
+                                    <div class="student-info">
+                                        <div class="student-name">Mike Chen</div>
+                                        <div class="student-points"><span class="points">2,380</span> points</div>
+                                    </div>
+                                </div>
+                                <div class="leaderboard-item">
+                                    <div class="rank top3">3</div>
+                                    <div class="student-avatar">E</div>
+                                    <div class="student-info">
+                                        <div class="student-name">Emma Davis</div>
+                                        <div class="student-points"><span class="points">2,320</span> points</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Documents Section -->
+            <div id="documents-section" class="content-section hidden">
+                <div class="section-header">
+                    <h2 class="section-title">All Documents</h2>
+                </div>
+                <div class="document-list">
+                    <div class="document-item">
+                        <div class="doc-icon pdf-icon">📄</div>
+                        <div class="doc-details">
+                            <div class="doc-title">Physics Chapter 12 - Electromagnetism</div>
+                            <div class="doc-meta">Uploaded by Mr. Smith • 2 days ago • 2.4 MB</div>
+                        </div>
+                        <button class="doc-download">Download</button>
+                    </div>
+                    <div class="document-item">
+                        <div class="doc-icon pdf-icon">📄</div>
+                        <div class="doc-details">
+                            <div class="doc-title">Mathematics Assignment - Calculus</div>
+                            <div class="doc-meta">Uploaded by Mrs. • 5 days ago • 1.8 MB</div>
+                        </div>
+                        <button class="doc-download">Download</button>
+                    </div>
+                    <div class="document-item">
+                        <div class="doc-icon pdf-icon">📄</div>
+                        <div class="doc-details">
+                            <div class="doc-title">Chemistry Lab Manual</div>
+                            <div class="doc-meta">Uploaded by Dr. Brown • 1 week ago • 5.2 MB</div>
+                        </div>
+                        <button class="doc-download">Download</button>
+                    </div>
+                    <div class="document-item">
+                        <div class="doc-icon pdf-icon">📄</div>
+                        <div class="doc-details">
+                            <div class="doc-title">Biology Notes - Cell Structure</div>
+                            <div class="doc-meta">Uploaded by Ms. Taylor • 1 week ago • 3.1 MB</div>
+                        </div>
+                        <button class="doc-download">Download</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Notices Section -->
+            <div id="notices-section" class="content-section hidden">
+                <div class="section-header">
+                    <h2 class="section-title">All Notices</h2>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-priority high-priority"></div>
+                    <div class="notice-content">
+                        <h4>Exam Schedule Released</h4>
+                        <p>Final examinations will begin from April 1st, 2024. Please check the detailed schedule on the notice board and prepare accordingly.</p>
+                        <div class="notice-time">2 hours ago</div>
+                    </div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-priority medium-priority"></div>
+                    <div class="notice-content">
+                        <h4>Library Hours Extended</h4>
+                        <p>Due to upcoming exams, library hours have been extended. The library will remain open until 8 PM on weekdays.</p>
+                        <div class="notice-time">1 day ago</div>
+                    </div>
+                </div>
+                <div class="notice-item">
+                    <div class="notice-priority low-priority"></div>
+                    <div class="notice-content">
+                        <h4>Science Fair Registration Open</h4>
+                        <p>Registration for the annual science fair is now open. Students interested in participating should submit their project proposals by March 30th.</p>
+                        <div class="notice-time">3 days ago</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results-section" class="content-section hidden">
+                <div class="section-header">
+                    <h2 class="section-title">All Results</h2>
+                </div>
+                <div class="result-item">
+                    <div class="result-info">
+                        <h4>Physics Midterm Exam</h4>
+                        <p>Completed on March 15, 2024</p>
+                    </div>
+                    <div class="result-score">
+                        <div class="score">88%</div>
+                        <div class="grade">Grade A</div>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-info">
+                        <h4>Chemistry Lab Report</h4>
+                        <p>Submitted on March 12, 2024</p>
+                    </div>
+                    <div class="result-score">
+                        <div class="score">92%</div>
+                        <div class="grade">Grade A+</div>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-info">
+                        <h4>Mathematics Quiz - Derivatives</h4>
+                        <p>Completed on March 8, 2024</p>
+                    </div>
+                    <div class="result-score">
+                        <div class="score">76%</div>
+                        <div class="grade">Grade B+</div>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-info">
+                        <h4>Biology Assignment - Genetics</h4>
+                        <p>Submitted on March 5, 2024</p>
+                    </div>
+                    <div class="result-score">
+                        <div class="score">94%</div>
+                        <div class="grade">Grade A+</div>
+                    </div>
+                </div>
+                <div class="result-item">
+                    <div class="result-info">
+                        <h4>English Literature Essay</h4>
+                        <p>Submitted on March 1, 2024</p>
+                    </div>
+                    <div class="result-score">
+                        <div class="score">82%</div>
+                        <div class="grade">Grade A-</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Leaderboard Section -->
+            <div id="leaderboard-section" class="content-section hidden">
+                <div class="section-header">
+                    <h2 class="section-title">Class Leaderboard</h2>
+                </div>
+                <div class="leaderboard-list">
+                    <div class="leaderboard-item" style="background: rgba(102, 126, 234, 0.1); border-color: #667eea;">
+                        <div class="rank top3">1</div>
+                        <div class="student-avatar">A</div>
+                        <div class="student-info">
+                            <div class="student-name">Bhavesh Upadhyay (You)</div>
+                            <div class="student-points"><span class="points">2,450</span> points</div>
+                        </div>
+                    </div>
+                    <div class="leaderboard-item">
+                        <div class="rank top3">2</div>
+                        <div class="student-avatar">M</div>
+                        <div class="student-info">
+                            <div class="student-name">Mike Chen</div>
+                            <div class="student-points"><span class="points">2,380</span> points</div>
+                        </div>
+                    </div>
+                    <div class="leaderboard-item">
+                        <div class="rank top3">3</div>
+                        <div class="student-avatar">E</div>
+                        <div class="student-info">
+                            <div class="student-name">Emma Davis</div>
+                            <div class="student-points"><span class="points">2,320</span> points</div>
+                        </div>
+                    </div>
+                    <div class="leaderboard-item">
+                        <div class="rank">4</div>
+                        <div class="student-avatar">J</div>
+                        <div class="student-info">
+                            <div class="student-name">James Rodriguez</div>
+                            <div class="student-points"><span class="points">2,280</span> points</div>
+                        </div>
+                    </div>
+                    <div class="leaderboard-item">
+                        <div class="rank">5</div>
+                        <div class="student-avatar">L</div>
+                        <div class="student-info">
+                            <div class="student-name">Lisa Thompson</div>
+                            <div class="student-points"><span class="points">2,250</span> points</div>
+                        </div>
+                    </div>
+                    <div class="leaderboard-item">
+                        <div class="rank">6</div>
+                        <div class="student-avatar">D</div>
+                        <div class="student-info">
+                            <div class="student-name">David Park</div>
+                            <div class="student-points"><span class="points">2,180</span> points</div>
+                        </div>
+                    </div>
+                   <div class="leaderboard-item">
+                        <div class="rank">7</div>
+                        <div class="student-avatar">S</div>
+                        <div class="student-info">
+                            <div class="student-name">Student</div>
+                            <div class="student-points"><span class="points">2,150</span> points</div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="leaderboard-item">
+                        <div class="rank">8</div>
+                        <div class="student-avatar">R</div>
+                        <div class="student-info">
+                            <div class="student-name">Rachel Green</div>
+                            <div class="student-points"><span class="points">2,120</span> points</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doubts Section -->
+            <div id="doubts-section" class="content-section hidden">
+                <div class="section-header">
+                    <h2 class="section-title">Ask a Doubt</h2>
+                </div>
+                <div class="doubt-form">
+                    <textarea class="doubt-input" placeholder="Type your doubt or question here..."></textarea>
+                    <button class="doubt-submit">Submit Doubt</button>
+                </div>
+                
+                <div class="section-header">
+                    <h2 class="section-title">My Previous Doubts</h2>
+                </div>
+                <div class="doubt-list">
+                    <div class="doubt-item">
+                        <div class="doubt-header">
+                            <div class="doubt-status status-answered">Answered</div>
+                        </div>
+                        <div class="doubt-question">
+                            <strong>Q:</strong> Can you explain the difference between electric field and magnetic field?
+                        </div>
+                        <div class="doubt-meta">Asked 2 days ago • Answered by Mr. Smith</div>
+                    </div>
+                    <div class="doubt-item">
+                        <div class="doubt-header">
+                            <div class="doubt-status status-pending">Pending</div>
+                        </div>
+                        <div class="doubt-question">
+                            <strong>Q:</strong> How do I solve quadratic equations using the discriminant method?
+                        </div>
+                        <div class="doubt-meta">Asked 5 hours ago</div>
+                    </div>
+                    <div class="doubt-item">
+                        <div class="doubt-header">
+                            <div class="doubt-status status-answered">Answered</div>
+                        </div>
+                        <div class="doubt-question">
+                            <strong>Q:</strong> What are the key differences between mitosis and meiosis?
+                        </div>
+                        <div class="doubt-meta">Asked 1 week ago • Answered by Ms. Taylor</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Assignments Section -->
+            <div id="assignments-section" class="content-section hidden">
+                <div class="section-header">
+                    <h2 class="section-title">Assignments</h2>
+                </div>
+                <div class="document-list">
+                    <div class="document-item" style="border-left: 3px solid #ff6b6b;">
+                        <div class="doc-icon" style="background: linear-gradient(135deg, #ff6b6b, #ee5a52);">⚠️</div>
+                        <div class="doc-details">
+                            <div class="doc-title">Physics Lab Report - Pendulum Experiment</div>
+                            <div class="doc-meta">Due: March 25, 2024 • Subject: Physics</div>
+                        </div>
+                        <button class="doc-download" style="background: linear-gradient(135deg, #ff6b6b, #ee5a52);">Submit</button>
+                    </div>
+                    <div class="document-item" style="border-left: 3px solid #ffd93d;">
+                        <div class="doc-icon" style="background: linear-gradient(135deg, #ffd93d, #ffed4e);">⏰</div>
+                        <div class="doc-details">
+                            <div class="doc-title">Mathematics Problem Set - Integration</div>
+                            <div class="doc-meta">Due: March 28, 2024 • Subject: Mathematics</div>
+                        </div>
+                        <button class="doc-download" style="background: linear-gradient(135deg, #ffd93d, #ffed4e); color: #333;">Submit</button>
+                    </div>
+                    <div class="document-item" style="border-left: 3px solid #6bcf7f;">
+                        <div class="doc-icon" style="background: linear-gradient(135deg, #6bcf7f, #5cb85c);">✅</div>
+                        <div class="doc-details">
+                            <div class="doc-title">Chemistry Research Paper</div>
+                            <div class="doc-meta">Submitted on March 15, 2024 • Grade: A+ (94%)</div>
+                        </div>
+                        <button class="doc-download" style="background: linear-gradient(135deg, #6bcf7f, #5cb85c);">View</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calendar Section -->
+            <div id="calendar-section" class="content-section hidden">
+                <div class="section-header">
+                    <h2 class="section-title">Upcoming Events</h2>
+                </div>
+                <div class="document-list">
+                    <div class="document-item">
+                        <div class="doc-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">📅</div>
+                        <div class="doc-details">
+                            <div class="doc-title">Physics Midterm Exam</div>
+                            <div class="doc-meta">March 25, 2024 • 10:00 AM - 12:00 PM • Room 301</div>
+                        </div>
+                    </div>
+                    <div class="document-item">
+                        <div class="doc-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">📅</div>
+                        <div class="doc-details">
+                            <div class="doc-title">Chemistry Lab Session</div>
+                            <div class="doc-meta">March 27, 2024 • 2:00 PM - 4:00 PM • Lab 2B</div>
+                        </div>
+                    </div>
+                    <div class="document-item">
+                        <div class="doc-icon" style="background: linear-gradient(135deg, #667eea, #764ba2);">📅</div>
+                        <div class="doc-details">
+                            <div class="doc-title">Mathematics Quiz</div>
+                            <div class="doc-meta">March 29, 2024 • 11:00 AM - 12:00 PM • Room 205</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Section -->
+            <div id="progress-section" class="content-section hidden">
+                <div class="section-header">
+                    <h2 class="section-title">Subject Progress</h2>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <div class="progress-subject">Physics</div>
+                        <div class="progress-percentage">85%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <div class="progress-subject">Mathematics</div>
+                        <div class="progress-percentage">92%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 92%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <div class="progress-subject">Chemistry</div>
+                        <div class="progress-percentage">78%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 78%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <div class="progress-subject">Biology</div>
+                        <div class="progress-percentage">88%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 88%;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <div class="progress-subject">English Literature</div>
+                        <div class="progress-percentage">82%</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 82%;"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="student.js"></script>
+</body>
+</html>
