@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Dashboard - Shikshan Sahayak System</title>
-    <link rel="stylesheet" href="student.css">
+    <title>Teacher Dashboard - Shikshan Sahayak</title>
+    <link rel="stylesheet" href="teacher.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -21,19 +23,19 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-section="documents">
                         <span class="nav-icon">📄</span>
-                        Documents
+                        Upload Materials
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-section="notices">
                         <span class="nav-icon">📢</span>
-                        Notices
+                        View Attendance
                     </a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a href="#" class="nav-link" data-section="results">
                         <span class="nav-icon">📊</span>
-                        Results
+                        Manage Notices
                     </a>
                 </li>
                 <li class="nav-item">
@@ -43,27 +45,28 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="#" class="nav-link" data-section="leaderboard">
+                        <span class="nav-icon">🏆</span>
+                        Add Marks
+                    </a>
+                </li> -->
+                <li class="nav-item">
                     <a href="#" class="nav-link" data-section="doubts">
                         <span class="nav-icon">❓</span>
                         Doubts
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" data-section="assignments">
-                        <span class="nav-icon">✍️</span>
-                        Assignments
-                    </a>
-                </li>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-section="calendar">
                         <span class="nav-icon">📅</span>
-                        Calendar
+                        Events
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link" data-section="progress">
                         <span class="nav-icon">📈</span>
-                        Progress
+                        Class Students
                     </a>
                 </li>
             </ul>
@@ -75,7 +78,7 @@
             <div class="header">
                 <div class="welcome-text">
                     <h1>Welcome back, Bhavesh Upadhyay!</h1>
-                    <p>Ready to continue your learning journey?</p>
+                    <p>Ready to continue your teaching journey?</p>
                 </div>
                 <div class="user-profile">
                     <div class="user-avatar">A</div>
@@ -91,19 +94,19 @@
                 <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-number">25</div>
-                        <div class="stat-label">Documents Available</div>
+                        <div class="stat-label">Documents Uploaded</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">3</div>
-                        <div class="stat-label">New Notices</div>
+                        <div class="stat-label"></div>Classes</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">85%</div>
-                        <div class="stat-label">Average Score</div>
+                        <div class="stat-label">Class Average</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">7</div>
-                        <div class="stat-label">Rank in Class</div>
+                        <div class="stat-label">Upcoming Events</div>
                     </div>
                 </div>
 
@@ -138,7 +141,7 @@
                         <!-- Recent Results -->
                         <div class="content-section">
                             <div class="section-header">
-                                <h2 class="section-title">Recent Results</h2>
+                                <h2 class="section-title">Recent Class Results</h2>
                                 <a href="#" class="view-all">View All</a>
                             </div>
                             <div class="result-item">
@@ -172,9 +175,9 @@
                             <div class="notice-item">
                                 <div class="notice-priority high-priority"></div>
                                 <div class="notice-content">
-                                    <h4>Exam Schedule Released</h4>
+                                    <h4>Bhavesh Upadhyay</h4>
                                     <p>Final exams will begin from April 1st</p>
-                                    <div class="notice-time">2 hours ago</div>
+                                    <div class="notice-time"></div>
                                 </div>
                             </div>
                             <div class="notice-item">
@@ -193,26 +196,26 @@
                             <div class="leaderboard-list">
                                 <div class="leaderboard-item">
                                     <div class="rank top3">1</div>
-                                    <div class="student-avatar">S</div>
-                                    <div class="student-info">
-                                        <div class="student-name">Bhavesh Upadhyay</div>
-                                        <div class="student-points"><span class="points">2,450</span> points</div>
+                                    <div class="teacher-avatar">S</div>
+                                    <div class="teacher-info">
+                                        <div class="teacher-name">Bhavesh Upadhyay</div>
+                                        <div class="teacher-points"><span class="points">2,450</span> points</div>
                                     </div>
                                 </div>
                                 <div class="leaderboard-item">
                                     <div class="rank top3">2</div>
-                                    <div class="student-avatar">M</div>
-                                    <div class="student-info">
-                                        <div class="student-name">Mike Chen</div>
-                                        <div class="student-points"><span class="points">2,380</span> points</div>
+                                    <div class="teacher-avatar">M</div>
+                                    <div class="teacher-info">
+                                        <div class="teacher-name">Mohit</div>
+                                        <div class="teacher-points"><span class="points">2,380</span> points</div>
                                     </div>
                                 </div>
                                 <div class="leaderboard-item">
                                     <div class="rank top3">3</div>
-                                    <div class="student-avatar">E</div>
-                                    <div class="student-info">
-                                        <div class="student-name">Emma Davis</div>
-                                        <div class="student-points"><span class="points">2,320</span> points</div>
+                                    <div class="teacher-avatar">E</div>
+                                    <div class="teacher-info">
+                                        <div class="teacher-name">Gagandeep</div>
+                                        <div class="teacher-points"><span class="points">2,320</span> points</div>
                                     </div>
                                 </div>
                             </div>
@@ -221,82 +224,39 @@
                 </div>
             </div>
 
-            <!-- Documents Section -->
+            <!-- Upload Materials -->
             <div id="documents-section" class="content-section hidden">
                 <div class="section-header">
-                    <h2 class="section-title">All Documents</h2>
-                </div>
-                <div class="document-list">
-                    <div class="document-item">
-                        <div class="doc-icon pdf-icon">📄</div>
-                        <div class="doc-details">
-                            <div class="doc-title">Physics Chapter 12 - Electromagnetism</div>
-                            <div class="doc-meta">Uploaded by Mr. Smith • 2 days ago • 2.4 MB</div>
-                        </div>
-                        <button class="doc-download">Download</button>
-                    </div>
-                    <div class="document-item">
-                        <div class="doc-icon pdf-icon">📄</div>
-                        <div class="doc-details">
-                            <div class="doc-title">Mathematics Assignment - Calculus</div>
-                            <div class="doc-meta">Uploaded by Mrs. • 5 days ago • 1.8 MB</div>
-                        </div>
-                        <button class="doc-download">Download</button>
-                    </div>
-                    <div class="document-item">
-                        <div class="doc-icon pdf-icon">📄</div>
-                        <div class="doc-details">
-                            <div class="doc-title">Chemistry Lab Manual</div>
-                            <div class="doc-meta">Uploaded by Dr. Brown • 1 week ago • 5.2 MB</div>
-                        </div>
-                        <button class="doc-download">Download</button>
-                    </div>
-                    <div class="document-item">
-                        <div class="doc-icon pdf-icon">📄</div>
-                        <div class="doc-details">
-                            <div class="doc-title">Biology Notes - Cell Structure</div>
-                            <div class="doc-meta">Uploaded by Ms. Taylor • 1 week ago • 3.1 MB</div>
-                        </div>
-                        <button class="doc-download">Download</button>
-                    </div>
+                    <!-- <h2 class="section-title">All Documents</h2> -->
+                    <div class="upload-container">
+                <h2>Upload PDF Document</h2>
+                <input type="file" id="pdfInput" accept="application/pdf" />
+                <div id="fileInfo"></div>
+                <button onclick="uploadPDF()">Upload</button>
+            </div>
                 </div>
             </div>
 
-            <!-- Notices Section -->
+            <!-- View Attendance -->
             <div id="notices-section" class="content-section hidden">
                 <div class="section-header">
-                    <h2 class="section-title">All Notices</h2>
+                    <h2 class="section-title">Attendees</h2>
                 </div>
                 <div class="notice-item">
-                    <div class="notice-priority high-priority"></div>
+                    <div class="notice-priority"></div>
                     <div class="notice-content">
-                        <h4>Exam Schedule Released</h4>
-                        <p>Final examinations will begin from April 1st, 2024. Please check the detailed schedule on the notice board and prepare accordingly.</p>
-                        <div class="notice-time">2 hours ago</div>
+                        <h4>Bhavesh Upadhyay</h4>
+                        <h4>Harshit</h4>
+                        <h4>Mohit</h4>
+                        <h4>Gagandeep</h4>
+                        <h4>Shreyadita</h4>
                     </div>
-                </div>
-                <div class="notice-item">
-                    <div class="notice-priority medium-priority"></div>
-                    <div class="notice-content">
-                        <h4>Library Hours Extended</h4>
-                        <p>Due to upcoming exams, library hours have been extended. The library will remain open until 8 PM on weekdays.</p>
-                        <div class="notice-time">1 day ago</div>
-                    </div>
-                </div>
-                <div class="notice-item">
-                    <div class="notice-priority low-priority"></div>
-                    <div class="notice-content">
-                        <h4>Science Fair Registration Open</h4>
-                        <p>Registration for the annual science fair is now open. Students interested in participating should submit their project proposals by March 30th.</p>
-                        <div class="notice-time">3 days ago</div>
-                    </div>
-                </div>
             </div>
 
-            <!-- Results Section -->
+            <!-- Manage Notices -->
             <div id="results-section" class="content-section hidden">
                 <div class="section-header">
-                    <h2 class="section-title">All Results</h2>
+                    <h2 class="section-title">All Results</h2>  
                 </div>
                 <div class="result-item">
                     <div class="result-info">
@@ -350,7 +310,7 @@
                 </div>
             </div>
 
-            <!-- Leaderboard Section -->
+            <!-- Add Marks -->
             <div id="leaderboard-section" class="content-section hidden">
                 <div class="section-header">
                     <h2 class="section-title">Class Leaderboard</h2>
@@ -358,67 +318,67 @@
                 <div class="leaderboard-list">
                     <div class="leaderboard-item" style="background: rgba(102, 126, 234, 0.1); border-color: #667eea;">
                         <div class="rank top3">1</div>
-                        <div class="student-avatar">A</div>
-                        <div class="student-info">
-                            <div class="student-name">Bhavesh Upadhyay (You)</div>
-                            <div class="student-points"><span class="points">2,450</span> points</div>
+                        <div class="teacher-avatar">A</div>
+                        <div class="teacher-info">
+                            <div class="teacher-name">Bhavesh Upadhyay (You)</div>
+                            <div class="teacher-points"><span class="points">2,450</span> points</div>
                         </div>
                     </div>
                     <div class="leaderboard-item">
                         <div class="rank top3">2</div>
-                        <div class="student-avatar">M</div>
-                        <div class="student-info">
-                            <div class="student-name">Mike Chen</div>
-                            <div class="student-points"><span class="points">2,380</span> points</div>
+                        <div class="teacher-avatar">M</div>
+                        <div class="teacher-info">
+                            <div class="teacher-name">Mike Chen</div>
+                            <div class="teacher-points"><span class="points">2,380</span> points</div>
                         </div>
                     </div>
                     <div class="leaderboard-item">
                         <div class="rank top3">3</div>
-                        <div class="student-avatar">E</div>
-                        <div class="student-info">
-                            <div class="student-name">Emma Davis</div>
-                            <div class="student-points"><span class="points">2,320</span> points</div>
+                        <div class="teacher-avatar">E</div>
+                        <div class="teacher-info">
+                            <div class="teacher-name">Emma Davis</div>
+                            <div class="teacher-points"><span class="points">2,320</span> points</div>
                         </div>
                     </div>
                     <div class="leaderboard-item">
                         <div class="rank">4</div>
-                        <div class="student-avatar">J</div>
-                        <div class="student-info">
-                            <div class="student-name">James Rodriguez</div>
-                            <div class="student-points"><span class="points">2,280</span> points</div>
+                        <div class="teacher-avatar">J</div>
+                        <div class="teacher-info">
+                            <div class="teacher-name">James Rodriguez</div>
+                            <div class="teacher-points"><span class="points">2,280</span> points</div>
                         </div>
                     </div>
                     <div class="leaderboard-item">
                         <div class="rank">5</div>
-                        <div class="student-avatar">L</div>
-                        <div class="student-info">
-                            <div class="student-name">Lisa Thompson</div>
-                            <div class="student-points"><span class="points">2,250</span> points</div>
+                        <div class="teacher-avatar">L</div>
+                        <div class="teacher-info">
+                            <div class="teacher-name">Lisa Thompson</div>
+                            <div class="teacher-points"><span class="points">2,250</span> points</div>
                         </div>
                     </div>
                     <div class="leaderboard-item">
                         <div class="rank">6</div>
-                        <div class="student-avatar">D</div>
-                        <div class="student-info">
-                            <div class="student-name">David Park</div>
-                            <div class="student-points"><span class="points">2,180</span> points</div>
+                        <div class="teacher-avatar">D</div>
+                        <div class="teacher-info">
+                            <div class="teacher-name">David Park</div>
+                            <div class="teacher-points"><span class="points">2,180</span> points</div>
                         </div>
                     </div>
                    <div class="leaderboard-item">
                         <div class="rank">7</div>
-                        <div class="student-avatar">S</div>
-                        <div class="student-info">
-                            <div class="student-name">Student</div>
-                            <div class="student-points"><span class="points">2,150</span> points</div>
+                        <div class="teacher-avatar">S</div>
+                        <div class="teacher-info">
+                            <div class="teacher-name">teacher</div>
+                            <div class="teacher-points"><span class="points">2,150</span> points</div>
                         </div>
                     </div>
                     </div>
                     <div class="leaderboard-item">
                         <div class="rank">8</div>
-                        <div class="student-avatar">R</div>
-                        <div class="student-info">
-                            <div class="student-name">Rachel Green</div>
-                            <div class="student-points"><span class="points">2,120</span> points</div>
+                        <div class="teacher-avatar">R</div>
+                        <div class="teacher-info">
+                            <div class="teacher-name">Rachel Green</div>
+                            <div class="teacher-points"><span class="points">2,120</span> points</div>
                         </div>
                     </div>
                 </div>
@@ -426,16 +386,16 @@
 
             <!-- Doubts Section -->
             <div id="doubts-section" class="content-section hidden">
-                <div class="section-header">
+                <!-- <div class="section-header">
                     <h2 class="section-title">Ask a Doubt</h2>
                 </div>
                 <div class="doubt-form">
                     <textarea class="doubt-input" placeholder="Type your doubt or question here..."></textarea>
                     <button class="doubt-submit">Submit Doubt</button>
-                </div>
+                </div> -->
                 
                 <div class="section-header">
-                    <h2 class="section-title">My Previous Doubts</h2>
+                    <h2 class="section-title">Doubts</h2>
                 </div>
                 <div class="doubt-list">
                     <div class="doubt-item">
@@ -468,8 +428,9 @@
                 </div>
             </div>
 
-            <!-- Assignments Section -->
+            <!-- Calendar Section -->
             <div id="assignments-section" class="content-section hidden">
+                
                 <div class="section-header">
                     <h2 class="section-title">Assignments</h2>
                 </div>
@@ -503,6 +464,13 @@
 
             <!-- Calendar Section -->
             <div id="calendar-section" class="content-section hidden">
+                <div class="section-header">
+                    <h2 class="section-title">Add Events</h2>
+                </div>
+                <div class="doubt-form">
+                    <textarea class="doubt-input" placeholder="Type your event details here..."></textarea>
+                    <button class="doubt-submit">Add</button>
+                </div>
                 <div class="section-header">
                     <h2 class="section-title">Upcoming Events</h2>
                 </div>
@@ -584,6 +552,9 @@
             </div>
         </main>
     </div>
-    <script src="student.js"></script>
+
+
+
+    <script src="teacher.js"></script>
 </body>
 </html>
